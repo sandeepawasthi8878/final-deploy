@@ -1,0 +1,53 @@
+/* Cart.css */
+
+.cart-container {
+    padding-left: 20px;
+    background-image: url(https://media.istockphoto.com/id/1500354603/vector/the-dark-little-witch.jpg?s=1024x1024&w=is&k=20&c=c0XxYcg96ex_3jitb1_bbf91rgYRVK2rEYF-fHOtNRc=);
+}
+
+.cart-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.competition-category {
+    width: calc(25% - 20px); /* Set initial width for three cards per row */
+    margin: 10px;
+}
+
+.competition-card {
+    background-color: white;
+    font-size: bold;
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+.competition-card img {
+    width: 100%;
+}
+
+.button-style {
+    margin: 0 auto;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.center-text {
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width: 480px) {
+    /* Container Styles */
+    .cart-container {
+        flex-direction: column; /* Change to column layout for smaller screens */
+    }
+
+    .competition-category {
+        width: 100%;
+      padding-right: 13px;
+    }
+}
